@@ -1,0 +1,38 @@
+﻿SKIMT'S SOLARMAP
+
+Version: 		0.9.2b
+Date: 			September 9 2020
+Author: 		Michael "Skimt" Winge
+
+DESCRIPTION 
+
+The solar map will project the world coordinates of planets and the grid unto a 
+text panel in the form of a 2D map, along with detailed information regarding the 
+planets and moons. If the grid is static or does not have a valid ship controller 
+it will appear as a red dot instead of an arrow. Background and foreground color 
+can be changed via the text panel's in-game control panel.
+
+INSTALLATION
+
+Add "[SolarMap]" without the citation marks into the CustomData of a text panel. 
+The script should automatically pick up new text panels, although it might take 
+a while because the script has been deliberately written to operate efficiently. 
+Average wait time can be ~30 seconds, so if you are impatient you should recompile
+the script.
+
+AVAIALBLE CONFIGURATIONS
+
+GridColor=#FF0000
+HideGrid=true
+HideMap=true
+HideInfo=false
+OffsetX=50
+OffsetY=-50
+
+GridColor is written in HTML Hex Color Code (#RGB, #RRGGBB), where 0 is black and
+F is white on the following scale: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+Example: #FF0000 is red, #00FF00 is green, #0000FF is blue. 
+
+You do not need to add any of the configurations if you don't want to, and you only
+need to select the configuration you need. Grid color will attempt to automatically
+adjust if you do not force color using the GridColor configuration. 
